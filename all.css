@@ -32,7 +32,8 @@ body {
     line-height: 1;
 }
 ol, ul {
-    list-style: none;
+    margin-left: 20px;
+    list-style-position: outside;
 }
 blockquote, q {
     quotes: none;
@@ -50,6 +51,13 @@ table {
 *,*::before, *::after{
     box-sizing: border-box;
     
+}
+body{
+font-size: 16px;
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  background-color: #fbfbfb; 
 }
 .wrap{
   max-width: 960px;
@@ -125,7 +133,8 @@ a.btn {
 }
 .title{
    font-size: 28px;
-   font-weight: 700; 
+   font-weight: 700;
+   color: black; 
 }
 
 .content{
@@ -136,9 +145,34 @@ a.btn {
     margin-top: 80px;
     margin-bottom: 48px;
 }
+a{
+    text-decoration: none;
+    color: #0027d5; ;
+}
 h2{
     font-weight: 700;
     font-size: 28px;
+    margin-bottom: 24px;
+    color: blue;
+}
+h3{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+p{
+   font-size: 16px;
+   margin-top: 4px;
+   margin-bottom: 8px; 
+}
+.note{
+    border-radius: 24px;
+    padding: 24px;
+    background-color: #ededed;
+    font-family: Noto Sans TC;
+    font-weight: 700;
+    margin-top: 24px;
     margin-bottom: 24px;
 }
 .changepage {
@@ -174,6 +208,109 @@ h2{
     background-color: #ffffff;
     text-align: center;
     margin: 24px auto;
+}
+@media (max-width: 777px) {
+  .wrap {
+    padding: 0 16px;
+    max-width: 100%;
+  }
+
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 12px 0;
+  }
+
+  .header .menu {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .header .menu li a {
+    font-size: 20px;
+  }
+
+  .cover {
+    flex-direction: column;
+    padding: 16px 0;
+  }
+
+  .cover img {
+    width: 100%;
+  }
+
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .newest {
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  a.tag {
+    font-size: 18px;
+  }
+
+  .tag-list {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .content {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+
+  .article {
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 4px 0 8px 0;
+  }
+
+  .note {
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  .changepage {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .changepage a {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .copyright {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 

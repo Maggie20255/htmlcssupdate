@@ -141,6 +141,41 @@ h2{
     font-size: 28px;
     margin-bottom: 24px;
 }
+.changepage {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.changepage a {
+    display: block;
+    width: 108px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    padding: 8px 16px;
+    text-align: center;
+    color: #4b4b4b;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px;
+    gap: 24px;
+}
+.left{
+    font-size: 32px;
+}
+.right{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align:right;
+}
+.copyright{
+    background-color: #ffffff;
+    text-align: center;
+    margin: 24px auto;
+}
+
 
 
 

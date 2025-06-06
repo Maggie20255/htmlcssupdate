@@ -78,18 +78,22 @@ body {
   align-items: center;
 }
 
-.header .menu {
+.header .menu a {
   display: flex;
-  gap: 24px;
+  gap: 40px;
+  color: #000000;
+  padding: 24px 40px;
+  margin: 0auto;
 }
 
-.header .menu li a {
+.header .menu li  {
   font-size: 28px;
   font-weight: 700;
   color: black;
   display: inline-block;
-  text-decoration: none;
+  list-style: none;
 }
+
 
 .cover {
   display: flex;
@@ -103,8 +107,7 @@ body {
 .cover img {
   width: 50%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .mobile {
@@ -147,6 +150,10 @@ a.btn {
   font-weight: 700;
   color: black;
 }
+h1{
+  font-weight: 700;
+  font-size: 28px;
+}
 
 .content {
   margin: 0 auto;
@@ -160,7 +167,7 @@ a.btn {
 
 a {
   text-decoration: none;
-  color: #0027d5;
+  color: blue;
 }
 
 h2 {
@@ -174,6 +181,8 @@ h3 {
   font-size: 20px;
   font-weight: 700;
   line-height: 150%;
+  margin-top: 32px;
+  margin-bottom: 16px;
 }
 
 p {
